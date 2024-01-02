@@ -1,38 +1,62 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.h1{
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+  color: rgb(43, 43, 43);
+}
+
+.home{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login {
+  border: hidden;
+  border-radius: 15px;
+  margin: 50px;
+  width: 40%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 375px;
 }
 
-.App-link {
-  color: #61dafb;
+.login:hover{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: 0.1s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input {
+  padding: 10px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 1px solid;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.btn {
+  border: hidden;
+  font-size: 20px;
+  padding: 5px;
+  width: 70px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 1px 1px;
+  transition: 0.05s;
 }
